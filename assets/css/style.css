@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}*/
+
+/*:root{
+  --cor-padrao: #120a8f;
+  --cor-padrao-hover: #4b0082;
+  --cor-fonte-p: #555;
+  --cor-btn: #563434;
+  --cor-btn-hover: #15ff00;
+  --cor-btn-fonte: #000;
+  --cor-fonte-corpo: #555;
+  --cor-fonte-corpo-leve: #777;
+  --cor-fonte: #fff;
+}*/
+/*INICIO BARRA DE NAVEGAÇÃO*/
+
+.navbar .bg-primary{
+  background-color: #568dfe;
+  z-index: 2;
+  margin-bottom: 10px;
+}
+
+.container-fluid{
+  height: 70px;
+}
+
+.navbar-logo img{
+  width: 80px;
+  height: 80px;
+}
+
+/*LINK BARRA DE NAVEGAÇÃO*/
+.list-group .list-group-item{
+  text-decoration: none;
+  padding: 2px;
+  border: none;
+  margin: 0;
+}
+
+.list-group ul{
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 10px;
+}
+
+.navbar-brand{
+  align-items: right;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 610px;
+}
+
+.btn{
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  line-height: 20px;
+}
+
+.btn.btn-outline-success{
+  background-color: blue;
+  color: #fff;
+  border-color: white;
+  border-radius: 20px;
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
+.btn.btn-outline-success a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/*INICIO CONTAINER DA BARRA DE NAVEGAÇÃO*/
+.search-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  height: 50px;
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+::-webkit-input-placeholder{
+  font-size: 17px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #aeaeae;
+}
+
+.search-text{
+  background: none;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  font-size: 16px;
+  transition: 0.4s;
+  width: 0;
+}
+
+.search-btn{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.loupe-white{
+  display: none;
+}
+
+.search-box:hover > .search-text{
+  width: 320px;
+  padding-left: 20px;
+}
+
+.search-box:hover > .search-btn{
+  background: #447ce7;
+}
+
+.search-box:hover > .search-btn .loupe-blue{
+  display: none;
+}
+
+.search-box:hover > .search-btn .loupe-white{
+  display: block;
+}
+
+.background-container {
+  background-image: url('../img/imagem-fundo-rentex.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 24px;
+}
+
+/*INICIO CARD*/
+.card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 900px;
+  
+}
+
+.card {
+  position: relative;
+  width: 200px; /* Largura menor */
+  height: 400px; /* Altura maior */
+  margin: 20px;
+  border-radius: 10px;
+  background-size: auto;
+  background-position: center;
+  overflow: hidden;
+  box-sizing: border-box; /* Inclui a largura e a altura na medida total */
+  flex: 0 0 calc(20.33% - 40px); /* Define a largura dos cartões para ocupar aproximadamente 1/3 da largura do contêiner, com margens */
+}
+
+.card h2 {
+  position: absolute;
+  text-align: center; /* Centraliza o texto */
+  position: absolute; /* Posiciona o texto absolutamente dentro do card */
+  bottom: 20px; /* Distância do texto à borda inferior */
+  left: 0;
+  right: 0;
+  color: #fff; /* Cor do texto */
+}
+
+.card:nth-child(1) {
+  background-image: url('../img/imagem-bolas-rentex.jpeg');
+}
+
+.card:nth-child(2) {
+  background-image: url('../img/imagem-jogo-de-cartas-rentex.jpeg');
+}
+
+.card:nth-child(3) {
+  background-image: url('../img/imagem-quadra-rentex.jpeg');
+}
+
+/*.background-container {
+  background-image: url('assets/img/imagem-fundo-barra-de-navegacao-rentex.jpeg'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho para a sua imagem */
+  /*background-size: cover; / Redimensiona a imagem para cobrir todo o contêiner */
+  /*background-position: center; / Centraliza a imagem dentro do contêiner */
+  /*position: relative; / Define a posição do contêiner como relativa para que possamos ajustar a sobreposição */
+  /*z-index: 1; / Define o z-index para que o contêiner fique atrás de outros elementos, como a barra de navegação */
+/*}
+
+
+/*.container-fluid{
+  background-color: #120a8f;
+}*/
+
+
+
+
