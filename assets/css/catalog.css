@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jua', sans-serif;
+}
+
+body{
+  background-color: #22100C;
+  color: #FDF6E3;
+}
+
+.navbar-container{
+  background-color: #FDF6E3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  background-color: #FDF6E3;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+  background-color: #FDF6E3;
+  border-radius: 50%;
+}
+
+.brand-name {
+  font-weight: normal;
+  color: #22100C;
+  background-color: #FDF6E3;
+  font-size: 50px;
+}
+
+.logo-do-instagram img{
+  background-color: #FDF6E3;
+  margin-right: 20px; /* Reduza a margem para alinhar melhor com os links */
+  border: 2px solid blue;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #FDF6E3;
+}
+
+.about-link {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  background-color: #FDF6E3;
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.logo-do-instagram{
+  height: 25px;
+  background-color: #FDF6E3;
+  margin-right: 100px;
+  padding: -10px;
+}
+
+/*BOTÃO DE ALUGAR*/
+.rent-button {
+  background: linear-gradient(to right, #FFA103, #F46202);
+  color: #22100C;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 90px;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 20px;
+  width: 130px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+/*CARDS*/
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.container-catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 20px;
+    border: 2px solid red;
+}
+
+.card-box{
+    width: calc(30% - 20px);
+    margin: 10px;
+    border-radius: 50px;
+    border: 2px solid red;
+}
+
+.card-box .card-img-top img{
+    border-radius: 20px 10px 0 0;
+    border: 2px solid blue; 
+}
+
+.card-body{
+  border: 2px solid yellow;
+}
+
+.btn .btn-primary{
+  background: linear-gradient(to right, #FFA103, #F46202);
+  color: #22100C;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 90px;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 20px;
+  width: 130px;
+  height: 50px;
+}
+
+
+
